@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#593d2b">
+  <meta name="description" content="A little birthday story made with love for Mas Ardha.">
+  <title>For Mas Ardha — Happy Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Allura&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="Birthday story">a little love story <span>✦</span></a>
+    <div class="header-actions">
+      <div class="scene-counter" aria-live="polite"><span id="currentScene">01</span><i></i>08</div>
+      <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" title="Nyalakan atau matikan musik">
+        <span class="music-icon">♫</span><span id="musicLabel">Music off</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="scene scene-opening active" id="scene-1" aria-label="Opening">
+      <div class="opening-spark spark-a">✦</div><div class="opening-spark spark-b">✧</div>
+      <div class="opening-content">
+        <p class="eyebrow">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+        <div class="tiny-heart">♡</div>
+        <h1>Happy<br><em>Birthday</em></h1>
+        <p class="opening-name">Mas Ardha <span>🤎</span></p>
+        <p class="opening-copy">A little something, made just for you.</p>
+        <button class="primary-button" data-next>Open Your Surprise <span>↗</span></button>
+        <p class="scroll-note">MADE WITH LOVE · JUST FOR YOU</p>
+      </div>
+      <div class="side-note">NOVEMBER 07 · A DAY TO CELEBRATE</div>
+    </section>
+
+    <section class="scene lock-scene" id="scene-2" aria-label="Birthday lock game" hidden>
+      <div class="section-kicker">A LITTLE GAME BEFORE THE SURPRISE</div>
+      <div class="lock-card paper-card">
+        <div class="lock-illustration" aria-hidden="true"><div class="lock-shackle"></div><div class="lock-body"><span>✦</span></div></div>
+        <p class="eyebrow">SOME MEMORIES HAVE A SECRET KEY</p>
+        <h2>Unlock the <em>surprise</em></h2>
+        <p class="muted">Pilih tanggal yang menjadi kunci untuk membuka cerita ini.</p>
+        <div class="date-options" id="dateOptions">
+          <button type="button" class="date-option">071125</button>
+          <button type="button" class="date-option">151225</button>
+          <button type="button" class="date-option">071120</button>
+          <button type="button" class="date-option">251215</button>
+        </div>
+        <p class="game-feedback" id="gameFeedback" aria-live="polite">A little hint: six special numbers.</p>
+      </div>
+      <button class="text-button back-button" data-back>← Kembali</button>
+    </section>
+
+    <section class="scene memory-scene" id="scene-3" aria-label="Favorite person" hidden>
+      <div class="section-kicker">THE PERSON BEHIND THIS LITTLE STORY</div>
+      <div class="memory-layout">
+        <div class="memory-copy">
+          <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+          <h2>Happy Birthday,<br><em>My Favorite Person</em></h2>
+          <p class="memory-quote">“You are one of the most beautiful parts of my life.”</p>
+          <button class="primary-button" data-next>Keep reading <span>↗</span></button>
+        </div>
+        <figure class="photo-frame">
+          <span class="frame-tape"></span>
+          <img src="assets/ardha-photo.jpg" alt="Foto Mas Ardha" class="birthday-photo">
+          <figcaption>one of my favorite views <span>♡</span></figcaption>
+        </figure>
+      </div>
+      <span class="memory-decoration">♡</span>
+    </section>
+
+    <section class="scene letter-scene" id="scene-4" aria-label="Birthday letter" hidden>
+      <div class="section-kicker">A LETTER FROM MY HEART</div>
+      <article class="letter-card paper-card">
+        <div class="letter-ornament">✿</div>
+        <p class="eyebrow">DEAR MY FAVORITE PERSON</p>
+        <h2>A birthday <em>letter</em></h2>
+        <div class="letter-body">
+          <p>Selamat ulang tahun, Mas Sayaangg!!🤍</p>
+          <p>Terima kasih sudah lahir di dunia ini, Sayaangg. Terima kasih telah hadir dalam kehidupan aku. Doa terbaik untutkmu, Mas. Semoga hal baik, dan keberuntungan selalu menyertaimu. Sehat terus ya manusia favoritku. Semoga langkahmu selalu dipermudah, hatimu selalu menemukan ketenangan, doamu selalu terkabulkan satu persatu, panjang umurnya, Sayaanggku. Semoga penduduk bumi dan alam semesta senantiasa merayakanmu dengan penuh suka cita. Tetap denganku selamanya, Mas Sayaangg🤍🫂</p>
+          <p>Selamat ulang tahun pria baikku. Semoga semakin bertambah umurmu, semakin bertambah juga rasa sayangmu untukku, yaa!</p>
+        </div>
+        <div class="letter-sign">with all my love <span>♡</span></div>
+      </article>
+      <button class="primary-button scene-next" data-next>Next page <span>↗</span></button>
+    </section>
+
+    <section class="scene distance-scene" id="scene-5" aria-label="Japan and Kediri" hidden>
+      <div class="section-kicker">MILES APART, CLOSE AT HEART</div>
+      <h2>Japan <span class="cross">×</span> Kediri</h2>
+      <p class="distance-intro">Two places, one story — and a heart that keeps finding its way home.</p>
+      <div class="distance-art">
+        <div class="place place-japan"><span class="place-icon">☼</span><strong>JAPAN</strong><small>where you are</small></div>
+        <svg class="route-line" viewBox="0 0 600 180" role="img" aria-label="Garis perjalanan yang menghubungkan Jepang dan Kediri">
+          <path class="route-dash" d="M25 125 C170 -15 390 -15 575 125" />
+          <path class="route-solid" d="M25 125 C170 -15 390 -15 575 125" />
+          <g class="plane"><text x="0" y="0">✈</text></g>
+          <circle cx="25" cy="125" r="5"/><circle cx="575" cy="125" r="5"/>
+        </svg>
+        <div class="place place-kediri"><span class="place-icon">⌂</span><strong>KEDIRI</strong><small>where I am</small></div>
+      </div>
+      <div class="distance-message paper-card">
+        <span class="quote-mark">“</span>
+        <p>Jarak mungkin membuat kita belum bisa selalu berdampingan, tapi bukan berarti hati kita ikut berjauhan. Semoga setiap kilometer yang memisahkan justru menguatkan sabar, percaya, dan keinginan kita untuk bertemu lagi. Sampai hari itu tiba, tetap jadi rumah untuk satu sama lain, ya.</p>
+      </div>
+      <button class="primary-button" data-next>One more thing <span>↗</span></button>
+    </section>
+
+    <section class="scene special-scene" id="scene-6" aria-label="Why you are special" hidden>
+      <div class="section-kicker">THINGS I HOPE YOU NEVER FORGET</div>
+      <h2>Why You Are <em>So Special</em></h2>
+      <p class="muted">Ada banyak alasan, ini tiga hal kecil yang selalu aku ingat.</p>
+      <div class="reasons-grid">
+        <article class="reason-card paper-card"><span class="reason-number">01</span><span class="reason-icon">☼</span><h3>Your Smile</h3><p>Senyuman dan tawa kamu selalu jadi penyemangat aku.</p><span class="reason-line"></span></article>
+        <article class="reason-card paper-card"><span class="reason-number">02</span><span class="reason-icon">♡</span><h3>Your Kindness</h3><p>Cara kamu ngasih perhatian dan selalu ada buat aku.</p><span class="reason-line"></span></article>
+        <article class="reason-card paper-card"><span class="reason-number">03</span><span class="reason-icon">✧</span><h3>Your Support</h3><p>Kamu selalu memberikan semangat untukku.</p><span class="reason-line"></span></article>
+      </div>
+      <button class="primary-button" data-next>There's a date to remember <span>↗</span></button>
+    </section>
+
+    <section class="scene calendar-scene" id="scene-7" aria-label="November 2001 calendar" hidden>
+      <div class="section-kicker">THE DAY MY WORLD GOT A LITTLE BRIGHTER</div>
+      <h2>The Day My Favorite Person <em>Was Born</em></h2>
+      <p class="muted">One date, one wonderful reason to celebrate.</p>
+      <div class="calendar-card paper-card">
+        <div class="calendar-top"><span>✿ &nbsp; A MONTH TO REMEMBER</span><strong>NOVEMBER <b>2001</b></strong><span>✧ &nbsp; VOL. 11</span></div>
+        <div class="calendar-weekdays"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div>
+        <div class="calendar-days" id="calendarDays"></div>
+        <div class="calendar-bottom"><span>THE LITTLE THINGS ARE THE BIG THINGS</span><span>♡</span></div>
+      </div>
+      <p class="calendar-feedback" id="calendarFeedback" aria-live="polite">Sentuh tanggal yang diberi tanda hati.</p>
+      <button class="primary-button" id="calendarNext" data-next disabled>Read my last letter <span>↗</span></button>
+    </section>
+
+    <section class="scene finale-scene" id="scene-8" aria-label="Final birthday letter" hidden>
+      <div class="section-kicker">AND THIS IS MY WISH FOR YOU</div>
+      <div class="finale-layout">
+        <div class="bouquet-wrap"><img src="assets/flower-bouquet.svg" alt="Ilustrasi buket bunga" class="bouquet-image"><span class="bouquet-caption">a little bouquet for you</span></div>
+        <article class="final-letter paper-card">
+          <p class="eyebrow">WITH LOVE, ALWAYS</p>
+          <h2>Happy Birthday,<br><em>Sayang 🤎</em></h2>
+          <div class="final-letter-body">
+            <p>Selamat ulang tahun, ya.</p>
+            <p>Hari ini sebenarnya bukan cuma soal kamu yang bertambah usia, tapi tentang aku yang sekali lagi bersyukur banget karena semesta udah ngasih izin buat nemenin kamu tumbuh. Buat aku, hari ini adalah perayaan atas semua hal baik yang ada di diri kamu—cara kamu tertawa, kehangatan saat kamu peduli, dan setiap kebaikan kecilmu yang tanpa kamu sadari selalu bikin aku makin jatuh cinta setiap harinya.</p>
+            <p>Terima kasih ya, sudah melangkah sejauh ini dan selalu jadi alasan indah di balik bahagianya hari-hariku. Semoga di usiamu yang baru ini, hatimu makin dipenuhi kedamaian, impianmu makin dekat untuk terwujud, dan kita bisa terus saling menggenggam tangan untuk melewati setiap cerita di masa depan.</p>
+            <p>Happy birthday, sayang. Aku seneng banget bisa ada di sisimu hari ini.</p>
+          </div>
+          <div class="final-signature">With Love, Always <span>🤎</span></div>
+        </article>
+      </div>
+      <button class="text-button restart-button" id="restartButton">↺ Replay our little story</button>
+      <p class="ending-note">MADE FOR MAS ARDHA · NOVEMBER 07</p>
+    </section>
+  </main>
+
+  <div class="progress-track" aria-label="Progress cerita"><span id="progressFill"></span></div>
+  <audio id="backgroundMusic" src="assets/birthday-music.mp3" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
